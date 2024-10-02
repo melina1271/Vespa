@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Vespa.com.ar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="Conoce la historia y tradición de Vespa.">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="logo-vespa.png" alt="Logo Vespa">
+            </a>
+            <div class="menu-icon">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="modelos.html">Modelos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="Nosotros" class="section Nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Desde 1946, Vespa ha sido un símbolo de libertad y diseño atemporal.</p>
+            <img src="/untitled folder/sobre-nosotros.png" alt="Historia de Vespa">
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vespa | todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>
