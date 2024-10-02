@@ -207,6 +207,10 @@ footer p {
       text-align: center;
       margin: 15px 0;
   }
+
+  iframe.anuncio {
+    height: 400px;
+  }
 }
 
 /* Rollover effect for desktop */
