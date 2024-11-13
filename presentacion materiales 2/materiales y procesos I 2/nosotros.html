@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Vespa.com.ar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="Conoce la historia y tradición de Vespa.">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="untitled folder/logo-vespa.png" alt="Logo Vespa">
+            </a>
+            <div class="menu-icon">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="modelos.html">Modelos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container1">
+        <section id="Nosotros" class="section nosotros">
+            <h2>Del origen al mito</h2>
+            <p>Desde 1946, Vespa ha sido un símbolo de libertad y diseño atemporal. Cada modelo cuenta una historia, y cada viaje es una experiencia única. Únete a nosotros y descubre la pasión que hay detrás de cada Vespa.</p>
+        </section>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.carrusel-item');
+        const totalItems = items.length;
+        const intervalTime = 2000; // Intervalo de 2 segundos
+    
+        function moveCarousel() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarouselPosition();
+        }
+    
+        function updateCarouselPosition() {
+            const offset = -currentIndex * 100;
+            document.querySelector('.carrusel').style.transform = `translateX(${offset}%)`;
+        }
+    
+        setInterval(moveCarousel, intervalTime);
+    </script>
+    
+
+	<div class="contenedorcarrusel">
+        <button class="botoncarrusel prev">&lt;</button>
+        <div class="carrusel">
+            <div class="carrusel-item">
+                <img src="untitled folder/vespa98.jpg" alt="Image 1">
+                <h2> 1946 - Vespa 98 </h2>
+                <p>En abril de 1946, la moto ligera Vespa se presenta por primera vez al público en el círculo de golf de Roma.Es el inicio de la aventura del scooter más famoso del mundo</p>
+            </div>
+            <div class="carrusel-item">
+                <img src="untitled folder/2daimagencarrusell.jpeg" alt="Image 2">
+                <h2> 1956 - Vespa 150 </h2>
+                <p>En 1956, diez años después del primer modelo, sale de la fábrica de Pontedera la Vespa número un millón. El éxito de Vespa superó las expectativas más optimistas</p>
+            </div>
+            <div class="carrusel-item">
+                <img src="untitled folder/3erimagencarrussell.jpeg" alt="Image 3">
+                <h2> 1956 - VESPA 150 T.A.P</h2>
+                <p>El Ministerio de Defensa francés, en los años 50, encargó a la licenciataria Piaggio en Francia (A.C.M.A.) la construcción de un vehículo para usos militares. El resultado fue una Vespa muy especial en la que se realizaron 600 vehiculos</p>
+            </div>
+            <div class="carrusel-item">
+                <img src="untitled folder/4taimagencarrussell.jpeg" alt="Image 4">
+                <h2> 1957 - VESPA 400</h2>
+                <p>En el momento de mayor éxito de la Vespa, Piaggio decide entrar en el mundo de las cuatro ruedas, de nuevo con el objetivo de realizar un medio barato y de amplia difusión</p>
+            </div>
+            <div class="carrusel-item">
+                <img src="untitled folder/5taimagencarrussell.jpeg" alt="Image 5">
+                <h2> 1961 - VESPA 150 (VBA) </h2>
+                <p>La Vespa 125 "Primavera" deriva de la 125 VMA1 y desde su aparición, enseguida obtuvo un éxito inmediato. Manejable, rápida, ágil y potente, son los adjetivos que promocionan la Vespa Primavera en los años 60.</p>
+            </div>
+            <div class="carrusel-item">
+                <img src="untitled folder/6taimagencarrussell.jpeg" alt="Image 6">
+                <h2>1962 - VESPA DALÌ</h2>
+                <p> Dos estudiantes antes de realizar su viaje se ecnontraron con el maestro del surrealismo. Quien mejor que Salvador Dalí para publicitar el viaje, pinto las maletas laterales de la Vespa</p>
+            </div>
+            <div class="carrusel-item">
+                <img src="untitled folder/7maimagencarrussell.jpeg" alt="Image 7">
+                <h2> 1966 - VESPA 90 SUPER SPRINT</h2>
+                <p> La Super Sprint 90 es sin duda la Vespa de diseño más original, es la línea más dinámica que, a partir de 1966, Piaggio fabrica por “su velocidad, su irresistible agilidad y su entusiasmante conducción"</p>
+            </div>
+            <div class="carrusel-item">
+                <img src="untitled folder/8vaimagencarrussell.jpeg" alt="Image 8">
+                <h2>1968 - VESPA 180 RALLY</h2>
+                <p>Piaggio saca al mercado la más importante de siempre de la serie de 180cc, pero con motor y chasis completamente nuevos. Procede de la Vespa Sprint del 66, con modificaciones estéticas en el manillar, el baúl y el asiento</p>
+            </div>
+            <div class="carrusel-item">
+                <img src="untitled folder/9naimagencarrussell.jpeg" alt="Image 9">
+                <h2>1977 - VESPA GIGANTE </h2>
+                <p>La Vespa PX, lanzada en 1977 en París y modificada para la T5 en los 80, fue decorada por Stefano Tonelli con grafitos urbanos y exhibida en el Museo Piaggio en 2001 durante el evento "Gesto"</p>
+            </div>
+             <div class="carrusel-item">
+                <img src="untitled folder/10maimagencarrussell.jpeg" alt="Image 10">
+                 <h2> 1985 - VESPA 50 S</h2>
+                <p>Para satisfacer las peticiones de algunos países. Piaggio proyecta un modelo de 50 cc más rápido que el del mercado interno. El motor suministra una potencia superior teniendo las mismas medidas de diámetro interior y carrera.En Italia, la conducción de la Vespa 50 S suponía obligación de matrícula</p>
+            </div>
+             <div class="carrusel-item">
+                <img src="untitled folder/11vaimagencarrussell.jpeg" alt="Image 11">
+                 <h2> 1991 - VESPA 50 SPECIAL REVIVAL</h2>
+                <p>La Vespa 50 Special, muy popular entre los jóvenes de los años 60, fue reproducida en una edición limitada de 3,000 unidades en 1991.</p>
+            </div>
+             <div class="carrusel-item">
+                <img src="untitled folder/12vaimagencarrussell.webp" alt="Image 12">
+                 <h2> 2001 - VESPA FERRARI ET4 150</h2>
+                <p>Piaggio homenajeó a Ferrari por su victoria en la Fórmula 1 en 2000 con vehículos en color Rojo Ferrari y asientos de piel, personalizados con los nombres de Montezemolo, Todt, Schumacher y Barrichello</p>
+            </div>
+             <div class="carrusel-item">
+                <img src="untitled folder/13vaimagencarrussell.jpeg" alt="Image 13">
+                 <h2> 2005 - VESPA GTS 250 IE</h2>
+                <p>La Vespa GTS 250 i.e. celebra el legado de la Vespa GS, lanzada hace cincuenta años como el primer scooter deportivo, y destaca por su potencia, velocidad y tecnología avanzada, manteniendo su elegancia deportiva</p>
+            </div>
+             <div class="carrusel-item">
+                <img src="untitled folder/14vaimagencarrussell.jpeg" alt="Image 14">
+                 <h2>2006 - VESPA GT 60° 250 CC</h2>
+                <p>Para conmemorar su 60 aniversario, Vespa presentó una edición limitada de 999 unidades, fabricadas con materiales refinados y elaboraciones exclusivas, convirtiéndose en un hito único en su prolongada historia</p>
+            </div>
+             <div class="carrusel-item">
+                <img src="untitled folder/15vaimagencarrussell.jpeg" alt="Image 15">
+                 <h2> 2015 - VESPA 946 ARMANI</h2>
+                <p>Para celebrar el 40° aniversario de Giorgio Armani y el 130° del Grupo Piaggio, Emporio Armani presentó una versión exclusiva de la Vespa 946, que fusiona el estilo original del scooter con un diseño moderno</p>
+                
+            </div>
+             <div class="carrusel-item">
+                <img src="untitled folder/ultimaimagencarrussell.jpeg" alt="Image 16">
+                 <h2> 2016 - 70° ANIVERSARIO</h2>
+                <p>En su 70 aniversario, el Grupo Piaggio hace un homenaje al scooter más querido de todos los tiempos lanzando una versión especial</p>
+            </div>
+    
+        </div>
+        <button class="botoncarrusel next">&gt;</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Vespa | Todos los derechos reservados</p>
+        
+        <ul class="footersocial">
+            <li><a href="https://www.facebook.com/Vespa.AR/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/vespa.ar/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/vespa" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        
+        <p class="footercontacto">Contactanos: <a href="mailto:info@vespa.com.ar">info@vespa.com.ar</a></p>
+    </footer>
+
+  	
+<script>
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    const carousel = document.querySelector('.carrusel');
+    
+    
+    prevButton.addEventListener('click', () => {
+        carousel.scrollBy({
+            left: -carousel.clientWidth / 2, 
+            behavior: 'smooth'
+        });
+    });
+    
+    
+    nextButton.addEventListener('click', () => {
+        carousel.scrollBy({
+            left: carousel.clientWidth / 2, 
+            behavior: 'smooth'
+        });
+    });
+    
+    
+    </script>
+
+<script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+    });
+</script>
+
+    
+</body>
+</html>
