@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta name="description" content="Contacta con nosotros para más información sobre Vespa.">
+    
 </head>
 <body>
     <header>
@@ -25,11 +26,19 @@
         </nav>
     </header>
 
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vespa Contacto</title>
+</head>
+<body>
     <div class="container">
         <section id="contacto" class="section contacto">
             <h2>Contacto</h2>
             <p>¿Tenés preguntas? ¡Contáctanos!</p>
-            <form action="#" method="post">
+            <form id="ContactForm" action="#" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -43,6 +52,7 @@
             </form>
         </section>
     </div>
+
     <footer>
         <p>&copy; 2024 Vespa | Todos los derechos reservados</p>
         
@@ -57,6 +67,20 @@
     </footer>
 
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('ContactForm');
+            
+            form.addEventListener('submit', function(event) {
+                //event.preventDefault();
+                
+                // Muestra el mensaje de confirmación
+                alert('¡Gracias! Tu mensaje ha sido enviado con éxito.');
+                
+                // Envía el formulario después de mostrar el mensaje
+                form.submit();
+            });
+        });
+
         const menuIcon = document.querySelector('.menu-icon');
         const navLinks = document.querySelector('.nav-links');
 
